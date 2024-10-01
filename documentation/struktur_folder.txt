@@ -1,51 +1,93 @@
 pg_system/
 │
-├── dist/                          # Folder untuk file hasil build/produksi
-│   ├── css/                       # File CSS hasil kompilasi dan minifikasi
-│   ├── js/                        # File JavaScript hasil kompilasi dan minifikasi
-│   ├── images/                    # Gambar yang sudah dioptimasi
-│   └── index.html                 # File HTML final
+├── dist/                               # Folder untuk file hasil build/produksi
+│   ├── css/                            # File CSS hasil kompilasi dan minifikasi
+│   ├── js/                             # File JavaScript hasil kompilasi dan minifikasi
+│   ├── images/                         # Gambar yang sudah dioptimasi
+│   └── index.html                      # File HTML final
 │
-├── src/                           # Folder sumber utama untuk pengembangan
-│   ├── css/                       # File CSS asli atau Tailwind Input
-│   ├── js/                        # File JavaScript asli
-│   ├── images/                    # Gambar asli sebelum dioptimasi
-│   ├── components/                # Komponen HTML/CSS yang dapat digunakan ulang
-│   ├── pages/                     # Folder untuk setiap halaman
-│   │   ├── auth/                  # Modul Autentikasi
-│   │   │   ├── login.html         # Halaman login
-│   │   │   └── register.html      # Halaman register
-│   │   ├── user/                  # Modul Pengguna
-│   │   │   ├── profile.html       # Halaman profile pengguna
-│   │   │   └── settings.html      # Halaman pengaturan pengguna
-│   │   ├── management/            # Modul Manajemen
-│   │   │   ├── dashboard.html     # Halaman dashboard
-│   │   │   ├── employees.html     # Manajemen karyawan
-│   │   │   ├── departments.html   # Manajemen departemen
-│   │   │   └── reports.html       # Halaman laporan
-│   │   ├── hrm/                   # Modul Human Resource Management
-│   │   │   ├── attendance.html    # Halaman absensi
-│   │   │   ├── payroll.html       # Halaman payroll
-│   │   │   └── performance.html   # Halaman evaluasi kinerja
-│   │   ├── finance/               # Modul Keuangan
-│   │   │   ├── accounting.html    # Halaman akuntansi
-│   │   │   ├── budgeting.html     # Halaman budgeting
-│   │   │   └── reports.html       # Laporan keuangan
-│   │   ├── sales/                 # Modul Penjualan
-│   │   │   ├── orders.html        # Halaman order
-│   │   │   ├── customers.html     # Manajemen pelanggan
-│   │   │   └── products.html      # Manajemen produk
-│   │   └── index.html             # Halaman utama untuk pengembangan
+├── src/                                # Folder sumber utama untuk pengembangan
+│   ├── css/                            # File CSS asli atau Tailwind Input
+│   ├── js/                             # File JavaScript asli
+│   ├── images/                         # Gambar asli sebelum dioptimasi
+│   │   ├── logo-primary.png 
+│   │   ├── logo-secondary.png
+│   │   ├── retail_environment_bg.png 
+│   │   ├── green_minimalist_bg.png
+│   │   ├── profile_placeholder_icon.png
+│   │   ├── modern_furniture_bg.png
+│   │   └── minimalist_gray_bg.png
+│   ├── components/                     # Komponen HTML/CSS yang dapat digunakan ulang
+│   ├── pages/                          # Folder untuk setiap halaman
+│   │   ├── auth/                       # Modul Autentikasi
+│   │   │   ├── login.html              # Halaman login
+│   │   │   └── register.html           # Halaman register
+│   │   ├── user/                       # Modul Pengguna
+│   │   │   ├── profile.html            # Halaman profile pengguna
+│   │   │   └── settings.html           # Halaman pengaturan pengguna
+│   │   ├── management/                 # Modul Manajemen
+│   │   │   ├── dashboard.html          # Halaman dashboard
+│   │   │   ├── employees.html          # Manajemen karyawan
+│   │   │   ├── departments.html        # Manajemen departemen
+│   │   │   └── reports.html            # Halaman laporan
+│   │   ├── hrm/                        # Modul Human Resource Management
+│   │   │   ├── attendance.html         # Halaman absensi
+│   │   │   ├── payroll.html            # Halaman payroll
+│   │   │   └── performance.html        # Halaman evaluasi kinerja
+│   │   ├── finance/                    # Modul Keuangan
+│   │   │   ├── accounting.html         # Halaman akuntansi
+│   │   │   ├── budgeting.html          # Halaman budgeting
+│   │   │   └── reports.html            # Laporan keuangan
+│   │   ├── sales/                      # Modul Penjualan
+│   │   │   ├── orders.html             # Halaman order
+│   │   │   ├── customers.html          # Manajemen pelanggan
+│   │   │   └── products.html           # Manajemen produk
+│   │   └── index.html                  # Halaman utama untuk pengembangan
 │
-├── assets/                        # Folder umum untuk aset seperti font, icon, dll.
-│   ├── fonts/                     # Semua file font
-│   └── icons/                     # Semua file icon atau SVG
+├── assets/                             # Folder umum untuk aset seperti font, icon, dll.
+│   ├── fonts/                          # Semua file font
+│   │   ├── Poppins-Black.ttf
+│   │   ├── Poppins-Bold.ttf
+│   │   ├── Poppins-Italic.ttf
+│   │   ├── Poppins-Light.ttf
+│   │   ├── Poppins-Medium.ttf
+│   │   ├── Poppins-Regular.ttf
+│   │   └── Poppins-Thin.ttf
+│   └── icons/                          # Semua file icon atau SVG
+│   │   ├── check-circle.svg
+│   │   ├── dashboard.svg
+│   │   ├── download.svg
+│   │   ├── edit.svg
+│   │   ├── exclamation.svg
+│   │   ├── home.svg
+│   │   ├── logout.svg
+│   │   ├── plus.svg
+│   │   ├── profile.svg
+│   │   ├── search.svg
+│   │   ├── settings.svg
+│   │   ├── trash.svg
+│   │   └── x-circle.svg
 │
-├── gulpfile.js                    # Gulp file untuk automasi task
-├── tailwind.config.js             # Konfigurasi Tailwind
-├── postcss.config.js              # Konfigurasi PostCSS
-├── package.json                   # File npm untuk dependency dan scripts
-├── README.md                      # Dokumentasi proyek
-├── node_modules/                  # Folder hasil npm install
+├── gulpfile.js                         # Gulp file untuk automasi task
+├── tailwind.config.js                  # Konfigurasi Tailwind
+├── postcss.config.js                   # Konfigurasi PostCSS
+├── package.json                        # File npm untuk dependency dan scripts
+├── README.md                           # Dokumentasi proyek
+├── node_modules/                       # Folder hasil npm install
 │
-└── .gitignore                     # Daftar file/folder yang diabaikan Git
+└── .gitignore                          # Daftar file/folder yang diabaikan Git
+
+
+│   │   ├── logo-primary.png 
+│   │   ├── logo-secondary.png
+│   │   ├── profile_placeholder_icon.png
+│   │   ├── modern_furniture_bg.png
+│   │   └── minimalist_gray_bg.png
+│   │   ├── 
+│   │   ├── 
+│   │   ├── 
+│   │   ├── 
+│   │   ├── 
+│   │   ├── 
+│   │   ├── 
+│   │   └── 
