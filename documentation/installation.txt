@@ -1,0 +1,9 @@
+1. Inisialisasi Proyek dengan npm: npm init -y
+2. Install Tailwind CSS dan DaisyUI: npm install tailwindcss daisyui
+3. Install Gulp dan Plugin Tambahan: npm install gulp gulp-postcss autoprefixer cssnano gulp-file-include gulp-htmlmin gulp-clean-css gulp-terser gulp-imagemin
+4. Buat Konfigurasi Tailwind: npx tailwindcss init
+5. Setup PostCSS: 
+6. Buat Gulpfile untuk Task Automasi:
+7. Tambahkan Tailwind ke CSS:
+8. Jalankan Build: gulp
+9. Setup Gulp Watch: gulp watch
